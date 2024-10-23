@@ -1,4 +1,5 @@
 ### Bộ code base để bắt đầu học khóa Full Stack MERN Pro (HỌC PHẦN FRONT-END: REACTJS - MATERIAL UI - REDUX...vv) - Lập Trình qua dự án thực tế Trello Clone trên kênh YouTube TrungQuanDev của mình nhé các bạn!
+
 ### Base project for my Full Stack MERN Pro Course - Build Trello App on YouTube!
 
 - Playlist khóa Pro: https://www.youtube.com/playlist?list=PLP6tw4Zpj-RJP2-YrhtkWqObMQ-AA4TDy
