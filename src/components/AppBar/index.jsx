@@ -1,4 +1,4 @@
-import { Box, TextField, Tooltip, Typography } from "@mui/material";
+import { Box, Button, TextField, Tooltip, Typography } from "@mui/material";
 import AppsIcon from "@mui/icons-material/Apps";
 import SvgIcon from "@mui/material/SvgIcon";
 import { ReactComponent as TrelloIcon } from "../../assets/trello.svg";
@@ -23,6 +23,7 @@ const AppBar = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
+        overflowX: "auto",
       }}
     >
       <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -43,15 +44,21 @@ const AppBar = () => {
           >
             Trello
           </Typography>
-          <Box display={"flex"} alignItems={"center"} gap={1} marginLeft={1}>
+          <Box
+            sx={{ display: { xs: "none", md: "flex" } }}
+            alignItems={"center"}
+            gap={1}
+            marginLeft={1}
+          >
             <WorkSpaces />
             <Recents />
             <Starred />
             <Templates />
+            <Button variant="outlined">Create</Button>
           </Box>
         </Box>
       </Box>
-      <Box display={"flex"} alignItems={"center"} gap={2}>
+      <Box display={"flex"} alignItems={"center"} gap={2} marginLeft={2}>
         <TextField
           id="outlined-search"
           label="Search..."
@@ -62,12 +69,15 @@ const AppBar = () => {
         <ModeSelect />
         <Tooltip title="Notification">
           <Badge badgeContent={4} color="secondary" sx={{ cursor: "pointer" }}>
-            <NotificationsNoneIcon color="action" />
+            <NotificationsNoneIcon sx={{ color: "primary.main" }} />
           </Badge>
         </Tooltip>
 
         <Tooltip title="Help">
-          <HelpOutline color="action" sx={{ cursor: "pointer" }} />
+          <HelpOutline
+            color="action"
+            sx={{ cursor: "pointer", color: "primary.main" }}
+          />
         </Tooltip>
 
         <Profile />
