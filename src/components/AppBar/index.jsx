@@ -12,6 +12,7 @@ import Badge from "@mui/material/Badge";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import { HelpOutline } from "@mui/icons-material";
 import Profile from "./Menus/Profile";
+import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 
 const AppBar = () => {
   return (
@@ -54,7 +55,9 @@ const AppBar = () => {
             <Recents />
             <Starred />
             <Templates />
-            <Button variant="outlined">Create</Button>
+            <Button variant="outlined" startIcon={<LibraryAddIcon />}>
+              Create
+            </Button>
           </Box>
         </Box>
       </Box>

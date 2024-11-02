@@ -1,11 +1,6 @@
-import {
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-  useColorScheme,
-} from "@mui/material";
-import React from "react";
+import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+
+import { useColorScheme } from "@mui/material/styles";
 
 import SettingsBrightnessIcon from "@mui/icons-material/SettingsBrightness";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
