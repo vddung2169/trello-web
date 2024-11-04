@@ -32,7 +32,7 @@ function Profile() {
             aria-expanded={open ? "true" : undefined}
           >
             <Avatar
-              sx={{ width: 32, height: 32 }}
+              sx={{ width: 36, height: 36 }}
               alt="Travis Howard"
               src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/438242691_1204923907160494_8630031978453746722_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHAW7j9l1IYI-URWRghbU_5BUBKiCLt2N8FQEqIIu3Y3_FD_MILjRRpejdZ9Tv1nlS2avBX0gYPpAb9rfxusuRx&_nc_ohc=0T3VKjnGeDwQ7kNvgEQXXSC&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=Ahsv-28d0-McYKMhzTeKfkI&oh=00_AYAU-VUChQ7RV9Ek8oLuWdENfZStLulAN5RcZFvxO7LBtw&oe=6727B4E1"
             >
@@ -54,8 +54,8 @@ function Profile() {
             filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
             mt: 1.5,
             "& .MuiAvatar-root": {
-              width: 32,
-              height: 32,
+              width: 36,
+              height: 36,
               ml: -0.5,
               mr: 1,
             },
