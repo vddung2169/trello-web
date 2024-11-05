@@ -38,7 +38,6 @@ const BoardBar = () => {
         gap: 2,
         bgcolor: (theme) =>
           theme.palette.mode === "dark" ? "#34495e" : "#1976d2",
-        borderBottom: "1px solid #00bfa5",
       }}
     >
       <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -106,6 +105,11 @@ const BoardBar = () => {
               height: 30,
               fontSize: "16px",
               border: "none",
+              color: "white",
+              cursor: "pointer",
+              "&:first-of-type": {
+                bgcolor: "#A4B0BE",
+              },
             },
           }}
         >

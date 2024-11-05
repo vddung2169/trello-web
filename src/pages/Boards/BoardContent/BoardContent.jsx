@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+import ListColumns from "./ListColumns/ListColumns";
 
 const BoardContent = () => {
   return (
@@ -6,16 +7,13 @@ const BoardContent = () => {
       sx={{
         backgroundColor: "primary.main",
         width: "100%",
-        height: (theme) =>
-          `calc(100vh - ${theme.trelloCustome.appBarHeight} - ${theme.trelloCustome.boardBarHeight})`,
-        display: "flex",
-        alignItems: "center",
+        height: (theme) => theme.trelloCustome.boardContentHeight,
+        p: "10px 0",
         bgcolor: (theme) =>
           theme.palette.mode === "dark" ? "#34495e" : "#1976d2",
       }}
     >
-      {" "}
-      Board content
+      <ListColumns />
     </Box>
   );
 };
