@@ -10,7 +10,7 @@ import FilterListIcon from "@mui/icons-material/FilterList";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import capitalizeFirstLetter from "../../../utils/capitalize";
+import { capitalizeFirstLetter } from "../../../utils/capitalize";
 
 const MENU_STYLES = {
   color: "white",

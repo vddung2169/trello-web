@@ -32,9 +32,9 @@ const Card = ({ card }) => {
 
   const shouldShowCardAction = () => {
     return (
-      !!card?.memberIds.length ||
-      !!card?.comments.length ||
-      !!card?.attachments.length
+      !!card?.memberIds?.length ||
+      !!card?.comments?.length ||
+      !!card?.attachments?.length
     );
   };
 
@@ -47,7 +47,10 @@ const Card = ({ card }) => {
       sx={{
         cursor: "pointer",
         boxShadow: "0 1px 1px rgba(0,0,0,0.2)",
-        overflow: "unset",
+        // overflow: "unset",
+        // display: card?.FE_Placeholder ? "none" : "block",
+        overflow: card?.FE_Placeholder ? "hidden" : "unset",
+        height: card?.FE_Placeholder ? "0px" : "unset",
       }}
     >
       {card?.cover && <CardMedia sx={{ height: 140 }} image={card?.cover} />}
